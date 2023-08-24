@@ -22,6 +22,8 @@
       "upload": "nodes/upload/upload.js"
     }
   },
-  "dependencies": {
-  }
+  "directories": {
+    "example": "examples"
+  },
+  "devDependencies": {}
 }
