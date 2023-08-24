@@ -2,7 +2,7 @@
   "name": "roboflow-red",
   "version": "0.1.0",
   "description": "A visual way to interact with computer vision using Node-RED",
-  "main": "",
+  "main": " ",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
