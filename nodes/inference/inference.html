@@ -1,0 +1,62 @@
+<script type="text/javascript">
+    RED.nodes.registerType('inference',{
+        category: 'function',
+        color: '#A351FB',
+        defaults: {
+            apikey: {
+                value: "",
+                required: true
+            },
+            model: {
+                value: "",
+                required: true
+            },
+            overlap: {
+                value: 30,
+                required: true,
+                validate: ((a)=>!isNaN(a))
+            },
+            overlap: {
+                value: 30,
+                required: true,
+                validate: ((a)=>!isNaN(a))
+            },
+            confidence: {
+                value: 40,
+                required: true,
+                validate: ((a)=>!isNaN(a))
+            }
+        },
+        inputs:1,
+        outputs:1,
+        icon: function() {
+            return "font-awesome/fa-camera"
+        },
+        label: function() {
+            return "inference";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="inference">
+    <div class="form-row">
+        <label for="node-input-apikey"><i class="fa fa-user-secret"></i> API Key:</label>
+        <input type="text" id="node-input-apikey" placeholder="Get your API key from your workspace settings.">
+    </div>
+    <div class="form-row">
+        <label for="node-input-model"><i class="fa fa-link"></i> Model ID:</label>
+        <input type="text" id="node-input-model" placeholder="*project*/*version* (ex: license-plates/2)">
+    </div>
+    <div class="form-row">
+        <label for="node-input-confidence"><i class="fa fa-check-circle"></i> Min. Confidence:</label>
+        <input type="number" id="node-input-confidence" placeholder="Default: 30">
+    </div>
+    <div class="form-row">
+        <label for="node-input-overlap"><i class="fa fa-object-ungroup"></i> Max Overlap:</label>
+        <input type="number" id="node-input-overlap" placeholder="Default: 40">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="inference">
+    <p></p>
+</script>

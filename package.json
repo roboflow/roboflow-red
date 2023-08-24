@@ -1,0 +1,27 @@
+{
+  "name": "roboflow-red",
+  "version": "1.0.0",
+  "description": "A Node-RED wrapper for Roboflow",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "roboflow",
+    "cv",
+    "ml",
+    "node-red",
+    "node",
+    "red"
+  ],
+  "author": "",
+  "license": "ISC",
+  "node-red": {
+    "nodes": {
+      "inference": "nodes/inference/inference.js",
+      "upload": "nodes/upload/upload.js"
+    }
+  },
+  "dependencies": {
+  }
+}

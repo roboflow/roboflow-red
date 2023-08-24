@@ -1,0 +1,40 @@
+
+<script type="text/javascript">
+    RED.nodes.registerType('upload',{
+        category: 'function',
+        color: '#A351FB',
+        defaults: {
+            apikey: {
+                value: "",
+                required: true
+            },
+            project: {
+                value: "",
+                required: true
+            }
+        },
+        inputs:1,
+        outputs:1,
+        icon: function() {
+            return "font-awesome/fa-cloud-upload"
+        },
+        label: function() {
+            return "upload";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="upload">
+    <div class="form-row">
+        <label for="node-input-apikey"><i class="fa fa-user-secret"></i> API Key:</label>
+        <input type="text" id="node-input-apikey" placeholder="Get your API key from your workspace settings.">
+    </div>
+    <div class="form-row">
+        <label for="node-input-project"><i class="fa fa-link"></i> Project:</label>
+        <input type="text" id="node-input-project" placeholder="Project ID (ex: license-plates)">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="upload">
+    <p></p>
+</script>
