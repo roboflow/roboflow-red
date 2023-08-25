@@ -1,5 +1,5 @@
 {
-  "name": "roboflow-red",
+  "name": "@roboflow/roboflow-red",
   "version": "0.1.0",
   "description": "A visual way to interact with computer vision using Node-RED",
   "main": " ",
@@ -8,11 +8,9 @@
   },
   "keywords": [
     "roboflow",
-    "cv",
-    "ml",
-    "node-red",
-    "node",
-    "red"
+    "computer-vision",
+    "machine-learning",
+    "node-red"
   ],
   "author": "",
   "license": "ISC",
@@ -20,10 +18,19 @@
     "nodes": {
       "inference": "nodes/inference/inference.js",
       "upload": "nodes/upload/upload.js"
-    }
+    },
+    "version": ">=3.0.0"
   },
   "directories": {
     "example": "examples"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roboflow/inference.git"
+  },
+  "bugs": {
+    "url": "https://github.com/roboflow/inference/issues"
+  },
+  "homepage": "https://github.com/roboflow/inference#readme"
 }

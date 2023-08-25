@@ -11,7 +11,7 @@
         "id": "4c175a705ad600ec",
         "type": "inference",
         "z": "4a777a31dc65c715",
-        "apikey": "NF9DdbHcG0eKdKKEk1RY",
+        "apikey": "",
         "model": "license-plate-recognition-rxg4e/4",
         "overlap": "90",
         "confidence": "70",
@@ -213,7 +213,8 @@
         "y": 440,
         "wires": [
             [
-                "1680a7b26b4bcebc"
+                "1680a7b26b4bcebc",
+                "29eec51d9846de78"
             ]
         ]
     },
@@ -319,6 +320,18 @@
                 "25fb95ba17b8cafb",
                 "b08f8e03544a833c"
             ]
+        ]
+    },
+    {
+        "id": "29eec51d9846de78",
+        "type": "upload",
+        "z": "4a777a31dc65c715",
+        "apikey": "",
+        "project": "license-plate-recognition-rxg4e/4",
+        "x": 130,
+        "y": 500,
+        "wires": [
+            []
         ]
     }
 ]
